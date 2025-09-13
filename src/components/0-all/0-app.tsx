@@ -1,6 +1,6 @@
-import { Header } from "./1-header";
-import { SectionMain } from "./2-main";
-import { Footer } from "./3-footer";
+import { Header } from "../1-header";
+import { SectionMain } from "../2-main";
+import { Footer } from "../3-footer";
 
 export function App() {
     return (

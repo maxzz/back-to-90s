@@ -1,1 +1,1 @@
-export * from './0-app';
+export * from './0-all';
