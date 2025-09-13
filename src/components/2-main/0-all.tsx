@@ -5,7 +5,7 @@ import { CurrentImage } from "./2-current-image";
 export function SectionMain() {
     return (
         <div className="grid grid-cols-[1fr_minmax(100px,700px)_1fr] bg-slate-300">
-            <div className="col-start-2 text-xs bg-slate-600 grid grid-cols-[auto_1fr] gap-4 p-4">
+            <div className="col-start-2 text-xs grid grid-cols-[auto_1fr] gap-4 p-4">
                 <NavAppImages />
 
                 <div className="relative grid grid-rows-[auto_auto_1fr] gap-2">

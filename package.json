@@ -5,6 +5,7 @@
     "main": "index.js",
     "author": "Max Zakharzhevskiy <maxzz@msn.com>",
     "license": "MIT",
+    "type": "module",
     "devDependencies": {
         "@types/node": "^24.3.3",
         "@types/react": "^19.1.13",
@@ -25,7 +26,6 @@
         "tailwind-merge": "^2.6.0",
         "valtio": "^2.1.5"
     },
-    "type": "module",
     "scripts": {
         "tsc": "tsc -w",
         "dev": "vite",
