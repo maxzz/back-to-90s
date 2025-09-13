@@ -1,0 +1,14 @@
+/* Fonts */
+
+@layer base {
+    html {
+        font-family: "architects", system-ui, sans-serif;
+    }
+}
+
+@font-face {
+    font-family: "architects";
+    font-style: normal;
+    font-weight: 300;
+    src: local(""), url("../fonts/architects-daughter-v19-latin-regular.woff2") format("woff2");
+}
