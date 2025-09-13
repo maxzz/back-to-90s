@@ -21,7 +21,8 @@
     "noFallthroughCasesInSwitch": true,
     
     "paths": {
-        "@/*": ["./src/*"]
+        "@/*": ["./src/*"],
+        "@images/*": ["./assets/images-app/*"]
     }
   },
   "include": ["src"],
