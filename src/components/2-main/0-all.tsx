@@ -1,16 +1,14 @@
-import { useSnapshot } from "valtio";
-import { appSettings } from "../store/app-settings";
-import { ThatsAllFolks } from "./1-thats-all-folks";
-import { imagesApp } from "../store/images";
-import { classNames } from "@/utils";
+import { ThatsAllFolks } from "./5-thats-all-folks";
+import { NavAppImages } from "./1-nav-app-images";
+import { CurrentImage } from "./2-current-image";
 
 export function SectionMain() {
     return (
-        <div className="grid grid-cols-[1fr_minmax(100px,700px)_1fr] place-items-center gap-2 bg-slate-300">
-            <div className="col-start-2 relative text-sm text-center text-balance bg-slate-300 grid grid-cols-[auto_1fr] items-start gap-4 p-4">
+        <div className="grid grid-cols-[1fr_minmax(100px,700px)_1fr] bg-slate-300">
+            <div className="col-start-2 text-xs bg-slate-600 grid grid-cols-[auto_1fr] gap-4 p-4">
                 <NavAppImages />
 
-                <div className="text-center text-balance grid grid-rows-[auto_1fr_auto] gap-2">
+                <div className="relative grid grid-rows-[auto_auto_1fr] gap-2">
                     <p>
                         A long time ago I developed interfaces for a company that no longer exists, but the memories remain.
                     </p>
@@ -22,33 +20,11 @@ export function SectionMain() {
                         I still love this design.
                     </p>
 
-                    <img src={imagesApp[0]} alt="UI picture" />
+                    <CurrentImage className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 fill-red-500" />
 
                     <ThatsAllFolks className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 fill-red-500" />
                 </div>
             </div>
-        </div>
-    );
-}
-
-function NavAppImages() {
-    const { selectedImage } = useSnapshot(appSettings);
-    return (
-        <div className="flex flex-col gap-2 items-center w-20 shrink-0" aria-label="App images vertical bar">
-            {imagesApp.map(
-                (src, idx) => (
-                    <img
-                        className={classNames("w-16 cursor-pointer", idx === selectedImage && "scale-110 outline outline-sky-500/50 rounded transition-transform duration-300")}
-                        src={src}
-                        onClick={() => appSettings.selectedImage = idx}
-                        style={{
-                            filter: idx === selectedImage ? "grayscale(0)" : "grayscale(1)",
-                        }}
-                        alt={`App screenshot ${idx + 1}`}
-                        key={idx}
-                    />
-                )
-            )}
         </div>
     );
 }
