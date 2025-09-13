@@ -2,17 +2,9 @@
     "name": "back-to-90s",
     "description": "A quick and easy project to keep old memories alive.",
     "version": "1.25.0",
-    "type": "module",
     "main": "index.js",
     "author": "Max Zakharzhevskiy <maxzz@msn.com>",
     "license": "MIT",
-    "dependencies": {
-        "jotai": "^2.13.1",
-        "react": "^18.3.1",
-        "react-dom": "^18.3.1",
-        "tailwind-merge": "^2.6.0",
-        "valtio": "^2.1.5"
-    },
     "devDependencies": {
         "@types/node": "^22.15.17",
         "@types/react": "^18.3.12",
@@ -26,10 +18,18 @@
         "typescript": "^5.8.3",
         "vite": "^6.3.5"
     },
+    "dependencies": {
+        "jotai": "^2.13.1",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "tailwind-merge": "^2.6.0",
+        "valtio": "^2.1.5"
+    },
+    "type": "module",
     "scripts": {
-        "dev": "gulp",
-        "build": "gulp build",
-        "predeploy": "rm -rf dist && yarn build",
-        "deploy": "gh-pages -d dist"
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview",
+        "to-npm": "pnpm run build && gh-pages -d dist"
     }
 }
