@@ -8,7 +8,7 @@ export function SectionMain() {
     return (
         <div className="grid grid-cols-[1fr_minmax(100px,700px)_1fr] place-items-center gap-2 bg-slate-300">
             <div className="col-start-2 relative text-sm text-center text-balance bg-slate-300 grid grid-cols-[auto_1fr] items-start gap-4 p-4">
-                <AppImages />
+                <NavAppImages />
 
                 <div className="text-center text-balance grid grid-rows-[auto_1fr_auto] gap-2">
                     <p>
@@ -31,14 +31,14 @@ export function SectionMain() {
     );
 }
 
-function AppImages() {
+function NavAppImages() {
     const { selectedImage } = useSnapshot(appSettings);
     return (
         <div className="flex flex-col gap-2 items-center w-20 shrink-0" aria-label="App images vertical bar">
             {imagesApp.map(
                 (src, idx) => (
                     <img
-                        className={classNames("w-16 cursor-pointer transition-all duration-300", idx === selectedImage && "scale-110 border-2 border-red-500 rounded")}
+                        className={classNames("w-16 cursor-pointer", idx === selectedImage && "scale-110 outline outline-sky-500/50 rounded transition-transform duration-300")}
                         src={src}
                         onClick={() => appSettings.selectedImage = idx}
                         style={{
