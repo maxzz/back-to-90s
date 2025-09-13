@@ -4,7 +4,7 @@ import { Footer } from "./3-footer";
 
 export function App() {
     return (
-        <div className="h-screen flex flex-col items-center justify-center">
+        <div className="h-screen grid grid-rows-[auto_1fr_auto] gap-2">
             <Header />
             <SectionMain />
             <Footer />
