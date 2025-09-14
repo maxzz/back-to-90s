@@ -1,6 +1,6 @@
-import { ThatsAllFolks } from "./5-thats-all-folks";
 import { NavAppImages } from "./1-nav-app-images";
 import { CurrentImage } from "./2-current-image";
+import { ThatsAllFolks } from "../ui/icons";
 
 export function SectionMain() {
     return (
