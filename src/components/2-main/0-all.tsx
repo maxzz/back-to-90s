@@ -16,7 +16,10 @@ export function SectionMain() {
                     <p>
                         It was the dark age of square windows in Windows 95.
                         Everything about the user interface was flat, square, and boring.
-                        I was lucky enough to convince the management to add a little fun, and it was the right decision at the time.
+
+                        I was lucky enough to convince management to add some fun with skeuomorphism, and it was the right decision at the time.
+                        {/* Skeuomorphism is a design approach where digital interfaces mimic real-world objects by replicating their textures, dimensions, and even their use, with the goal of making new technology more familiar and intuitive for users. */}
+
                         I still love this design.
                     </p>
 
