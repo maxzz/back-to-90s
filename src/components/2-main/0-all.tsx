@@ -22,8 +22,14 @@ export function SectionMain() {
                         {' '}<a href="https://www.google.com/search?q=skeuomorphism&sourceid=chrome&ie=UTF-8" target="_blank" rel="noreferrer">
                             skeuomorphism
                         </a>
+                        {/* Compared to flat design, skeuomorphic design seems to facilitate a fast navigation through graphic user interfaces, because icons are more easily recognized and less abstract than their minimalistic counterparts found in flat design. */}
+                        {/* Compared to flat design, skeuomorphic design appears to facilitate quick navigation through graphical user interfaces, as the icons are easier to recognize and less abstract than their minimalist counterparts found in flat design. */}
 
-                        , and it was the right decision at the time.
+                        .
+
+                        Compared to flat design, skeuomorphic design seems to facilitate a fast navigation through graphic user interfaces, because icons are more easily recognized and less abstract than their minimalistic counterparts found in flat design.
+                        And it was the right decision at the time.
+
                         {/* Skeuomorphism is a design approach where digital interfaces mimic real-world objects by replicating their textures, dimensions, and even their use, with the goal of making new technology more familiar and intuitive for users. */}
 
                         I still love this design.
