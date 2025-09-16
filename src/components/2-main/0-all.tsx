@@ -1,10 +1,12 @@
+import { type ComponentPropsWithoutRef } from "react";
+import { classNames } from "@/utils";
 import { NavAppImages } from "./1-nav-app-images";
 import { CurrentImage } from "./2-current-image";
 import { ThatsAllFolks } from "../ui/icons";
 
-export function SectionMain() {
+export function SectionMain({ className, ...rest }: ComponentPropsWithoutRef<"section">) {
     return (
-        <div className="grid grid-cols-[1fr_minmax(100px,700px)_1fr] blueprint text-slate-400">
+        <div className={classNames("grid grid-cols-[1fr_minmax(100px,700px)_1fr] blueprint text-slate-400", className)} {...rest}>
             <div className="col-start-2 text-xs grid grid-cols-[auto_1fr] gap-4 p-4">
                 <NavAppImages />
 

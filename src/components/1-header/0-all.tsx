@@ -1,6 +1,6 @@
 import { type ComponentPropsWithoutRef } from "react";
-import { SvgForward } from "../ui/images";
 import { classNames } from "@/utils";
+import { SvgForward } from "../ui/images";
 
 export function Header({ className, ...rest }: ComponentPropsWithoutRef<"header">) {
     return (

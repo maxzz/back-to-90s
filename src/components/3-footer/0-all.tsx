@@ -1,5 +1,5 @@
-import { classNames } from "@/utils";
 import { type ComponentPropsWithoutRef } from "react";
+import { classNames } from "@/utils";
 
 export function Footer({ className, ...rest }: ComponentPropsWithoutRef<"header">) {
     return (
