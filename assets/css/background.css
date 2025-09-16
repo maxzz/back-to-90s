@@ -1,7 +1,7 @@
 .blueprint {
     --c1: #23ca8733;
     --c2: var(--c1);
-    background-color:slategray;
+    background-color:#002850;
 
     background-image:
         linear-gradient(var(--c1) 1px, transparent 1px),

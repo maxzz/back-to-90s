@@ -12,6 +12,7 @@ export default {
                 primary: colors.zinc,
                 secondary: colors.green,
                 // ...shadcnColors.colors,
+                canvas: '#002850',
             },
             // ...shadcnTheRest,
             gridTemplateColumns: {
