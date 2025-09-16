@@ -4,7 +4,7 @@ import { ThatsAllFolks } from "../ui/icons";
 
 export function SectionMain() {
     return (
-        <div className="grid grid-cols-[1fr_minmax(100px,700px)_1fr] bg-slate-300 text-slate-700">
+        <div className="grid grid-cols-[1fr_minmax(100px,700px)_1fr] 1bg-slate-300 blueprint text-slate-700">
             <div className="col-start-2 text-xs grid grid-cols-[auto_1fr] gap-4 p-4">
                 <NavAppImages />
 
