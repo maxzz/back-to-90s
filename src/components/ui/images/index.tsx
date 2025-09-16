@@ -1,1 +1,1 @@
-export * from "./forward";
+export * from "./svg-forward";
