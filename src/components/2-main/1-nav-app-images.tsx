@@ -1,12 +1,13 @@
-import { classNames } from "@/utils";
+import { type ComponentPropsWithoutRef } from "react";
 import { useSnapshot } from "valtio";
+import { classNames } from "@/utils";
 import { appSettings } from "../store/app-settings";
 import { imagesApp } from "../store/images";
 
-export function NavAppImages() {
+export function NavAppImages({className, ...rest}: ComponentPropsWithoutRef<"div">) {
     const { selectedImage } = useSnapshot(appSettings);
     return (
-        <div className="flex flex-col gap-2 items-center w-20 shrink-0" aria-label="App images vertical bar">
+        <div className={classNames("flex flex-col gap-2 items-center w-20 shrink-0", className)} aria-label="App images vertical bar" {...rest}>
             {imagesApp.map(
                 (src, idx) => (
                     <img

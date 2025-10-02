@@ -12,7 +12,7 @@ export function SectionMain({ className, ...rest }: ComponentPropsWithoutRef<"se
     return (
         <div className={classNames("grid grid-cols-[1fr_minmax(100px,700px)_1fr] blueprint text-slate-400", className)} {...rest}>
             <div className="col-start-2 text-xs grid grid-cols-[auto_1fr] gap-4 p-4">
-                <NavAppImages />
+                <NavAppImages className="self-center" />
 
                 <div className="relative grid grid-rows-[auto_auto_1fr] gap-2">
                     <Explanation showOrHide={selectedImage === 0} />
