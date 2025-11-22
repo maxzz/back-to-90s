@@ -14,15 +14,14 @@ export function SectionMain({ className, ...rest }: ComponentPropsWithoutRef<"se
             <div className="col-start-2 text-xs grid grid-cols-[auto_1fr] gap-4 p-4">
                 <NavAppImages className="self-center" />
 
-                <div className="relative grid grid-rows-[auto_auto_1fr] gap-2">
+                <div className="relative grid grid-rows-[auto_1fr] gap-2">
                     <Explanation showOrHide={selectedImage === 0} />
 
-                    {/* <CurrentImage className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 fill-red-500" /> */}
                     <div className="size-full grid place-items-center">
                         <CurrentImage className="fill-red-500" />
                     </div>
 
-                    {/* <ThatsAllFolks className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 fill-red-500" /> */}
+                    <ThatsAllFolks className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 fill-red-500" />
                 </div>
             </div>
         </div>
