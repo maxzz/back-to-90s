@@ -10,9 +10,8 @@ export function CurrentImage({ className, ...rest }: HTMLMotionProps<"img">) {
             <motion.img
                 key={selectedImage}
                 initial={{ scale: 0.5, opacity: 0.5 }}
-                animate={{ scale: 1, opacity: 1 }}
-                exit={{ scale: 0.5, opacity: 0 }}
-                transition={{ duration: 0.5 }}
+                animate={{ scale: 1, opacity: 1, transition: { duration: 0.7 } }}
+                exit={{ scale: 0.7, opacity: 0, transition: { duration: 0.3, ease: "backIn" } }}
                 className={className}
                 src={imagesApp[selectedImage]}
                 alt="UI picture"
