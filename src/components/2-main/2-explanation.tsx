@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 export function Explanation({ showOrHide = true }: { showOrHide?: boolean }) {
     return (
         <AnimatePresence>
-            {showOrHide && (
+            {showOrHide ? (
                 <motion.section
                     className="grid gap-2"
                     initial={{ y: -40, opacity: 0 }}
@@ -43,7 +43,7 @@ export function Explanation({ showOrHide = true }: { showOrHide?: boolean }) {
                         I still love this design.
                     </p>
                 </motion.section>
-            )}
+            ) : (<div />)}
         </AnimatePresence>
     );
 }
