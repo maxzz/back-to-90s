@@ -21,11 +21,11 @@
     },
     "dependencies": {
         "framer-motion": "^12.23.24",
-        "jotai": "^2.15.0",
+        "jotai": "^2.15.1",
         "react": "^19.2.0",
         "react-dom": "^19.2.0",
         "tailwind-merge": "^2.6.0",
-        "valtio": "^2.1.5"
+        "valtio": "^2.2.0"
     },
     "scripts": {
         "tsc": "tsc -w",
