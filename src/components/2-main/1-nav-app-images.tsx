@@ -11,7 +11,7 @@ export function NavAppImages({className, ...rest}: ComponentPropsWithoutRef<"div
             {imagesApp.map(
                 (src, idx) => (
                     <img
-                        className={classNames("w-16 cursor-pointer", idx === selectedImage && "scale-110 outline outline-sky-500/50 rounded transition-transform duration-300")}
+                        className={classNames("w-16 cursor-pointer", idx === selectedImage && "scale-110 outline-solid outline-sky-500/50 rounded-sm transition-transform duration-300")}
                         src={src}
                         onClick={() => appSettings.selectedImage = idx}
                         style={{
