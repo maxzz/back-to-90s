@@ -21,7 +21,7 @@ export function SectionMain({ className, ...rest }: ComponentPropsWithoutRef<"se
                         <CurrentImage className="fill-red-500" />
                     </div>
 
-                    <ThatsAllFolks className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 fill-red-500" />
+                    {/* <ThatsAllFolks className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 fill-red-500" /> */}
                 </div>
             </div>
         </div>
